@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control work</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ol class="nav__list">
+                        <li class="list"><a href="#nav">Списки</a></li>
+                        <li class="list"><a href="#table">Таблица</a></li>
+                        <li class="list"><a href="#img">Картинки</a></li>
+                        <li class="list"><a href="passport.html">Паспорт</a></li>
+                        <li class="list"><a href="task.html">Задача</a></li>
+                    </ol>
+                </nav>
+                <nav class="nav nav-mini">
+                    <ol class="nav__list">
+                        <li class="list"><a href="https://vk.com/mobile">Vk</a></li>
+                        /
+                        <li class="list"><a href="https://desktop.telegram.org/?setln=ru">TG</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="list-items" id="nav">
+       <div class="container">
+            <nav class="navigation">
+                <ol class="navigation__ol">
+                    <li> Tesla model S PLaid
+                        <ul>
+                            <li>Разгон от 0 до 100 км/ч: 1.99s</li>
+                            <li>Максимальная скорость: 322 км/ч</li>
+                            <li>Запас хода: 600 км</li>
+                        </ul>
+                    </li>
+                    <li> Tesla model X PLaid
+                        <ul>
+                            <li>Разгон от 0 до 100 км/ч: 2.6s</li>
+                            <li>Максимальная скорость:  300 км/ч</li>
+                            <li>Запас хода: 543 км</li>
+                        </ul>
+                    </li>
+                    <li> Tesla Roadster
+                        <ul>
+                            <li>Разгон от 0 до 100 км/ч: 1.9s</li>
+                            <li>Максимальная скорость: 400+ км/ч</li>
+                            <li>Запас хода: 1000+ км</li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+       </div>
+    </section>
+
+
+    <section id="table">
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Таблица с машинами</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="table__wrapper">
+                                <img src="img/teslaS.jpg" alt="teslaS" class="table__photo">
+                                <div  class="table__text">Tesla model S</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="table__wrapper">
+                                <img src="img/teslaX.jpg" alt="teslaX " class="table__photo" title="teslaX">
+                                <div class="table__text">Tesla model X</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="table__wrapper">
+                                <img src="img/3.webp" alt="tesla3" class="table__photo">
+                                <div  class="table__text">Tesla model 3</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="table__wrapper">
+                                <img src="img/y.webp" alt="teslaX " class="table__photo">
+                                <div class="table__text">Tesla model Y</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+        </div>
+    </section>
+
+    <section id="img">
+        <div class="container">
+            <div class="img">
+                <a href="big-photo.html">
+                    <img src="img/sexycars.jpg" alt="sexyCars" class="img__photo">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <form action="https://ya.ru/" class="form">
+               <div class="form-left">
+                    <label for="surname" class="form-label"> Введите фамилию:</label>
+                        <input type="text" class="form-input" id="surname" placeholder="Введите фамилию:">
+                    <label for="name" class="form-label">  Введите имя:</label>
+                        <input type="text" class="form-input" id="name" placeholder="Введите имя:">
+                    <label for="phone" class="form-label">  Введите телефон:</label>
+                        <input type="number" class="form-input" id="phone" placeholder="Введите телефон:">
+                </div>
+                <div class="form-right">
+                    <label for="email" class="form-label">  Введите почту:</label>
+                        <input type="email" class="form-input" id="email" placeholder=" Введите почту:">
+                    <label for="data" class="form-label">  Введите дату:</label>
+                        <input type="date" class="form-input" id="data" placeholder=" Введите дату:">
+                    <label for="password" class="form-label"> Введите пароль:</label>
+                        <input type="password" class="form-input" id="password" placeholder="Введите пароль:">
+                </div>
+                <button class="button">Отправить</button>
+            </form>
+            
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
